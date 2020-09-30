@@ -1,7 +1,7 @@
 #!/bin/sh
 
-tomcat_ver='apache-tomcat-9.0.37.tar.gz'
-tomcat='apache-tomcat-9.0.37'
+tomcat_ver='apache-tomcat-8.5.57.tar.gz'
+tomcat='apache-tomcat-8.5.57'
 
 yum install -y wget
 
@@ -13,7 +13,7 @@ else
 	yum install -y java-1.8.0-openjdk*
 fi
 
-wget https://mirrors.tuna.tsinghua.edu.cn/apache/tomcat/tomcat-9/v9.0.37/bin/$tomcat_ver
+wget https://mirrors.tuna.tsinghua.edu.cn/apache/tomcat/tomcat-8/v8.5.57/bin/$tomcat_ver
 
 tar -xzvf $tomcat_ver
 
